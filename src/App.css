@@ -1,0 +1,231 @@
+.full-screen-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.full-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the full area without distortion */
+}
+.unique-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+.unique-carousel-track {
+  display: flex;
+  animation: uniqueMoveImages 10s linear infinite;
+  width: calc(200px * 10); /* Ensures smooth looping */
+}
+.unique-carousel-track img {
+  width: 200px;
+  height: 150px;
+  margin: 0 8px; /* Equivalent to m-2 in Bootstrap */
+}
+@keyframes uniqueMoveImages {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+.owq{
+  width: 100%;
+  height: 20px;
+  background-color: white;
+
+}
+.sa{
+  width: 30Px;
+  height: 30px;
+  background-color: rgb(55, 55, 240);
+  color: white;
+}
+.mn{
+  background-color: rgb(0, 155, 129);
+  border-radius: 5rem;
+
+
+}
+.mnb{
+  background-color: rgb(79, 54, 0);
+  color: white;
+  border: 2px solid #000000
+}
+.co{
+  background-color: rgb(0, 155, 129);
+  color: white;
+  border: 0.5px solid #000000
+}
+.mot{
+  background-color: #EEEBC5;
+}
+.cde{
+  height: 120px;
+}
+.pa{
+  height: 400px;
+}
+.auto-hover-effect {
+  animation: auto-hover 1s infinite alternate;
+}
+
+@keyframes auto-hover {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+.mo{
+  height: 250px;
+}
+.bos{
+  height: 300px;
+}
+
+.custom-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%);
+}
+/* Set a colorful gradient background only for the form */
+.service-form {
+  background: linear-gradient(to right, hsl(160, 99%, 36%), #2ccbd0); /* Gradient from peach to yellow */
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff; /* Ensure text is white */
+}
+
+/* Styling for form elements inside the form */
+.service-form .form-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.service-form .form-check-label {
+  font-size: 1.1rem;
+}
+
+.service-form .form-control {
+  border-radius: 10px;
+}
+
+.service-form button {
+  font-size: 1.2rem;
+  border-radius: 50px;
+  padding: 10px 30px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional spacing between fields */
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for the submit button on hover */
+.service-form button:hover {
+  background-color: #45a049;
+}
+
+/* Ensure text areas are responsive and have space */
+textarea.form-control {
+  margin-top: 10px;
+  resize: vertical;
+}
+
+/* General Styles */
+.hotel-info {
+  background: linear-gradient(to right,#000000, #1b1b1b);
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Info Cards */
+.info-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  min-height: 150px;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Hover Effects */
+.info-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .info-card {
+    padding: 12px;
+  }
+}
