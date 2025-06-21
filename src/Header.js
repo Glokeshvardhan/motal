@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark  shadow-sm fixed-top co">
       <div className="container">
-        <NavLink className="navbar-brand d-flex align-items-center" to="/Home">
+        <NavLink className="navbar-brand  align-items-center" to="/Home">
           <img
             src={logo}
             className="img-fluid me-2"
