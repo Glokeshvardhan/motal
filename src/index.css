@@ -1,7 +1,8 @@
 .co{
   background-color: rgb(2, 132, 123);
   color: white;
-margin-left:-50px
+margin-left:-100px;
+margin-right:-100px;
 }
 .lt{
  font-size:large;
